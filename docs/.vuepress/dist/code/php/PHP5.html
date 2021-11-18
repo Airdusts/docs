@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>标签语法</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.0ed7c84e.css" as="style"><link rel="preload" href="/assets/js/app.dfc1759d.js" as="script"><link rel="preload" href="/assets/js/2.f9f55aeb.js" as="script"><link rel="preload" href="/assets/js/22.b2ba6871.js" as="script"><link rel="prefetch" href="/assets/js/10.057aa9df.js"><link rel="prefetch" href="/assets/js/11.1d422362.js"><link rel="prefetch" href="/assets/js/12.aca1d43f.js"><link rel="prefetch" href="/assets/js/13.1ef5bb9a.js"><link rel="prefetch" href="/assets/js/14.227a8088.js"><link rel="prefetch" href="/assets/js/15.555ca099.js"><link rel="prefetch" href="/assets/js/16.9ab75803.js"><link rel="prefetch" href="/assets/js/17.dce866b4.js"><link rel="prefetch" href="/assets/js/18.1096d412.js"><link rel="prefetch" href="/assets/js/19.8c757c4c.js"><link rel="prefetch" href="/assets/js/20.5cf7e4b8.js"><link rel="prefetch" href="/assets/js/21.630f645e.js"><link rel="prefetch" href="/assets/js/23.47c6ab01.js"><link rel="prefetch" href="/assets/js/24.9fda1433.js"><link rel="prefetch" href="/assets/js/25.5ec0b277.js"><link rel="prefetch" href="/assets/js/26.cb489525.js"><link rel="prefetch" href="/assets/js/27.e120d4e1.js"><link rel="prefetch" href="/assets/js/28.b350c0a6.js"><link rel="prefetch" href="/assets/js/29.1f88b229.js"><link rel="prefetch" href="/assets/js/3.46daf382.js"><link rel="prefetch" href="/assets/js/30.d2d4d084.js"><link rel="prefetch" href="/assets/js/4.b39d1559.js"><link rel="prefetch" href="/assets/js/5.2ec416ab.js"><link rel="prefetch" href="/assets/js/6.8a92375b.js"><link rel="prefetch" href="/assets/js/7.74dd622a.js"><link rel="prefetch" href="/assets/js/8.eb65acc0.js"><link rel="prefetch" href="/assets/js/9.6bb10eb0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0ed7c84e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="标签语法"><a href="#标签语法" class="header-anchor">#</a> 标签语法</h1> <blockquote><p>目标：了解标签语法的结构，掌握标签语法的意义和实际使用</p></blockquote> <blockquote><p>举个栗子</p></blockquote> <p>PHP嵌入在HTML中输出表格</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>PHP嵌入到HTML中<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--动态输出表格数据：打印九九乘法表--&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+            <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+            	<span class="token comment">#外层循环：控制行（一行一个tr标记控制）</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+					<span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;tr&gt;'</span><span class="token punctuation">;</span>
+                    <span class="token comment">#内存循环：控制列和输出（一列一个td标签控制）</span>
+                    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;td&gt;'</span><span class="token punctuation">;</span>
+                        <span class="token comment">#判定</span>
+                        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token variable">$i</span><span class="token punctuation">)</span><span class="token punctuation">{</span>                            
+                            <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;<span class="token interpolation"><span class="token variable">$i</span></span> * <span class="token interpolation"><span class="token variable">$j</span></span> = &quot;</span> <span class="token operator">.</span> <span class="token variable">$i</span> <span class="token operator">*</span> <span class="token variable">$j</span><span class="token punctuation">;</span>  
+                        <span class="token punctuation">}</span> 
+                        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;/td&gt;'</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    
+                    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;/tr&gt;'</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token delimiter important">?&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>以上代码存在一个不好的地方</p> <p>1、一些原本是HTML的代码如<code>&lt;tr&gt;</code>标记和<code>&lt;td&gt;</code>标记，都是直接写入到PHP，不利于前端维护</p> <ul><li>不方便样式控制</li> <li>不方便属性控制</li></ul> <p>解决方案：让PHP只管数据，不管HTML标记</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>PHP嵌入到HTML中<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--动态输出表格数据：打印九九乘法表：凡是HTML标记，都不受PHP控制--&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+            <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+            	<span class="token comment">#外层循环：控制行（一行一个tr标记控制）</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>      
+            <span class="token delimiter important">?&gt;</span></span>
+            <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+               <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+                  <span class="token comment">#内存循环：控制列和输出（一列一个td标签控制）</span>
+                  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token delimiter important">?&gt;</span></span>
+                <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token variable">$i</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;<span class="token interpolation"><span class="token variable">$i</span></span> * <span class="token interpolation"><span class="token variable">$j</span></span> = &quot;</span> <span class="token operator">.</span> <span class="token variable">$i</span> <span class="token operator">*</span> <span class="token variable">$j</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>     
+                <span class="token delimiter important">?&gt;</span></span>
+                <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token punctuation">}</span><span class="token delimiter important">?&gt;</span></span>
+            <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>        
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token punctuation">}</span><span class="token delimiter important">?&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>提问：以上代码中出现了很多的开始和结束标记，如循环和分支的，这样下来整个代码的阅读性变得很差，有没有办法解决呢？</p> <p>回答：标签语法</p> <blockquote><p>概念</p></blockquote> <p><strong>标签语法</strong>：指当PHP嵌入到HTML中时，为了让PHP代码的结构更加符合HTML的规范而设定的语法结构</p> <ul><li>PHP标签语法不是所有的结构都存在</li> <li>PHP标签语法只提供了两种针对{}的解决方案
+<ul><li>分支标签：即当分支语法出现时，可以使用标签语法代替</li> <li>循环标签：即当循环语法出现时，可以使用标签语法代替</li></ul></li> <li>标签语法规则
+<ul><li>当分支或循环的 <code>{</code> 出现时，使用冒号 <code>:</code> 代替</li> <li>当分支或循环的 <code>}</code> 出现时，使用相应的 <code>end + 标记内容;</code> 代替</li></ul></li> <li>PHP提供的标记语法
+<ul><li>IF分支</li> <li>switch分支</li> <li>while循环</li> <li>for循环</li> <li>foreach循环</li> <li>语法格式
+<ul><li>起始标记（if为例）： <code>if(条件表达式):</code></li> <li>结束标记（if为例）： <code>endif;</code></li></ul></li></ul></li></ul> <blockquote><p>步骤</p></blockquote> <p>1、正常将PHP嵌入到HTML代码中：HTML标记独立在PHP代码之外</p> <p>2、如果碰到分支或者循环，考虑内部代码是否涉及HTML标记</p> <ul><li>不涉及：直接写完</li> <li>涉及：那么使用标签语法</li></ul> <blockquote><p>示例</p></blockquote> <p>将上述案例换成PHP标记语法</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>PHP嵌入到HTML中<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--动态输出表格数据：打印九九乘法表：凡是HTML标记，都不受PHP控制--&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+            <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+            	<span class="token comment">#外层循环：控制行（一行一个tr标记控制）</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">:</span>     
+            <span class="token delimiter important">?&gt;</span></span>
+            <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+               <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+                  <span class="token comment">#内存循环：控制列和输出（一列一个td标签控制）</span>
+                  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token delimiter important">?&gt;</span></span>
+                <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+                    <span class="token comment">#此处没有HTML标签介入，所以不用拆分</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token variable">$i</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;<span class="token interpolation"><span class="token variable">$i</span></span> * <span class="token interpolation"><span class="token variable">$j</span></span> = &quot;</span> <span class="token operator">.</span> <span class="token variable">$i</span> <span class="token operator">*</span> <span class="token variable">$j</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>     
+                <span class="token delimiter important">?&gt;</span></span>
+                <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                <span class="token comment">&lt;!--内存的for循环结束--&gt;</span>
+                <span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token keyword">endfor</span><span class="token punctuation">;</span><span class="token delimiter important">?&gt;</span></span>
+            <span class="token comment">&lt;!--HTML标记不再属于PHP内部控制的代码--&gt;</span>        
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!--外层的for循环结束--&gt;</span>
+            <span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token keyword">endfor</span><span class="token punctuation">;</span><span class="token delimiter important">?&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><blockquote><p>流程图示例</p></blockquote> <p>流程图分析上述拆分PHP代码的解析逻辑</p> <p><img src="/img/php/%E8%A7%A3%E6%9E%90%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="解析逻辑"></p> <blockquote><p>小结</p></blockquote> <p>1、标签语法是PHP基本语法的一种替代方式</p> <p>2、PHP标签语法适用于分支和循环标记</p> <p>3、PHP标签语法的格式就是代替分支和循环的{}，其中</p> <ul><li><code>{</code> 替代为 <code>:</code></li> <li><code>}</code> 替代为 <code>end + 标记内容;</code></li></ul> <p>4、PHP标签语法一般是为了方便前后端分离（PHP嵌入到HTML中）</p> <ul><li>分离PHP和HTML标记：方便前端设计HTML标记属性和样式效果</li> <li>方便后台编程控制：当有多层<code>{</code> 和 <code>}</code> 时，容易进行标记匹配</li></ul> <p>5、扩展：PHP标签语法也可以在PHP代码里使用，但是不建议</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+    <span class="token comment">#PHP标签语法</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		<span class="token keyword">echo</span> <span class="token string single-quoted-string">'10'</span><span class="token punctuation">;</span>
+	<span class="token keyword">endif</span><span class="token punctuation">;</span>
+</span></code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.dfc1759d.js" defer></script><script src="/assets/js/2.f9f55aeb.js" defer></script><script src="/assets/js/22.b2ba6871.js" defer></script>
+  </body>
+</html>

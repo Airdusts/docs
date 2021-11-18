@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>流程控制</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.0ed7c84e.css" as="style"><link rel="preload" href="/assets/js/app.dfc1759d.js" as="script"><link rel="preload" href="/assets/js/2.f9f55aeb.js" as="script"><link rel="preload" href="/assets/js/20.5cf7e4b8.js" as="script"><link rel="prefetch" href="/assets/js/10.057aa9df.js"><link rel="prefetch" href="/assets/js/11.1d422362.js"><link rel="prefetch" href="/assets/js/12.aca1d43f.js"><link rel="prefetch" href="/assets/js/13.1ef5bb9a.js"><link rel="prefetch" href="/assets/js/14.227a8088.js"><link rel="prefetch" href="/assets/js/15.555ca099.js"><link rel="prefetch" href="/assets/js/16.9ab75803.js"><link rel="prefetch" href="/assets/js/17.dce866b4.js"><link rel="prefetch" href="/assets/js/18.1096d412.js"><link rel="prefetch" href="/assets/js/19.8c757c4c.js"><link rel="prefetch" href="/assets/js/21.630f645e.js"><link rel="prefetch" href="/assets/js/22.b2ba6871.js"><link rel="prefetch" href="/assets/js/23.47c6ab01.js"><link rel="prefetch" href="/assets/js/24.9fda1433.js"><link rel="prefetch" href="/assets/js/25.5ec0b277.js"><link rel="prefetch" href="/assets/js/26.cb489525.js"><link rel="prefetch" href="/assets/js/27.e120d4e1.js"><link rel="prefetch" href="/assets/js/28.b350c0a6.js"><link rel="prefetch" href="/assets/js/29.1f88b229.js"><link rel="prefetch" href="/assets/js/3.46daf382.js"><link rel="prefetch" href="/assets/js/30.d2d4d084.js"><link rel="prefetch" href="/assets/js/4.b39d1559.js"><link rel="prefetch" href="/assets/js/5.2ec416ab.js"><link rel="prefetch" href="/assets/js/6.8a92375b.js"><link rel="prefetch" href="/assets/js/7.74dd622a.js"><link rel="prefetch" href="/assets/js/8.eb65acc0.js"><link rel="prefetch" href="/assets/js/9.6bb10eb0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0ed7c84e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="流程控制"><a href="#流程控制" class="header-anchor">#</a> 流程控制</h1> <blockquote><p>举个栗子</p></blockquote> <p>晨练</p> <p><img src="/img/php/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.gif" alt="流程控制"></p> <p>说明：我们每天都在做一些类似的事情</p> <p>1、顺序执行某些事情：起床后刷牙</p> <p>2、在规划后选择某一件执行：两个晨练方案，根据天气条件选择执行</p> <p>3、在做某一件事情之后重复执行：跑圈圈</p> <blockquote><p>概念</p></blockquote> <p><strong>流程控制</strong>：就是设定好代码的执行流程，流程控制有三大结构</p> <ul><li>顺序结构：代码逐行向下顺序执行</li> <li>分支结构：设定好代码，根据条件选择性执行</li> <li>循环结构：设定好代码，根据条件重复执行</li></ul> <blockquote><p>小结</p></blockquote> <p>1、流程控制是代码为了实现现实的业务场景而设计的代码运行方式</p> <p>2、流程控制分为三种</p> <ul><li>顺序结构：代码顺序执行</li> <li>分支结构：代码选择性执行</li> <li>循环结构：代码重复执行</li></ul> <h2 id="_1、顺序结构"><a href="#_1、顺序结构" class="header-anchor">#</a> 1、顺序结构</h2> <blockquote><p>目标：了解代码的顺序执行方式</p></blockquote> <blockquote><p>概念</p></blockquote> <p><strong>顺序结构</strong>：即代码是以行为单位，逐行向下执行的</p> <blockquote><p>示例</p></blockquote> <div class="language-PHP extra-class"><pre class="language-php"><code><span class="token variable">$a</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token keyword">echo</span> <span class="token variable">$a</span><span class="token punctuation">;</span>
+</code></pre></div><p>以上执行逻辑</p> <p>1、执行第一行：$a = 10，在内存产生变量</p> <p>2、执行第二行：echo $a，输出10（空行忽略）</p> <p>3、执行到最后：脚本执行结束，销毁所有资源</p> <blockquote><p>小结</p></blockquote> <p>1、代码默认是顺序结构执行，即逐行向下</p> <h2 id="_2、分支结构"><a href="#_2、分支结构" class="header-anchor">#</a> 2、分支结构</h2> <blockquote><p>目标：掌握分支结构的基本逻辑，掌握分支结构的实际运用</p></blockquote> <blockquote><p>概念</p></blockquote> <p><strong>分支结构</strong>：即在编写代码的时候，考虑到各种情形，将不同情形的代码实现分块。在实际运行的时候根据条件选择相应的代码块执行（一般只执行一块代码）</p> <ul><li>IF分支：典型的互斥分支，根据条件选择一块代码执行</li> <li>Switch分支：粒子分支，条件的颗粒度较强，可以选择一块或者多块执行</li> <li>分支结构是编程中非常常见的一种代码结构</li></ul> <blockquote><p>步骤</p></blockquote> <p>1、确定条件（通常可变）</p> <p>2、设置不同条件的代码</p> <p>3、根据条件执行代码</p> <blockquote><p>小结</p></blockquote> <p>1、分支结构是要提前准备条件和多个代码块（有可能只有一个代码块）</p> <p>2、分支执行是根据条件选择代码块执行</p> <ul><li>IF分支（互斥）：最多执行一个代码块</li> <li>switch分支：根据开发人员控制可以选择一个或者多个代码块执行</li></ul> <h3 id="_2-1、if分支"><a href="#_2-1、if分支" class="header-anchor">#</a> 2.1、IF分支</h3> <blockquote><p>目标：掌握IF分支的结构语法，以及能够运用IF结构实现分支结构解决问题</p></blockquote> <blockquote><p>概念</p></blockquote> <p>IF分支：一种可以接收任意条件的分支结构</p> <ul><li>简单IF分支：条件满足执行，不满足不执行代码
+<ul><li>if(条件表达式){满足条件后执行的代码块}</li></ul></li> <li>标准IF分支：条件满足执行一块代码，不满足执行另外一块代码
+<ul><li>if(条件表达式){满足条件后执行的代码块}else{不满足条件执行的代码块}</li></ul></li> <li>复杂IF分支：有多个条件，条件有递进性
+<ul><li>if(条件1){满足执行}elseif(条件2){不满足条件1满足条件2执行}...else{都不满足执行}</li></ul></li> <li>IF分支永远最多执行一个代码块</li> <li>IF分支代码块里可以嵌入IF分支</li></ul> <blockquote><p>步骤</p></blockquote> <p>1、确定条件</p> <ul><li>条件是否唯一</li></ul> <p>2、确定分支代码块</p> <ul><li>满足条件的代码块</li> <li>不满足条件的代码块（非必须：看功能需要）</li></ul> <p>3、根据条件执行</p> <blockquote><p>示例</p></blockquote> <p>1、明天天气好，我就出去走走</p> <div class="language-PHP extra-class"><pre class="language-php"><code><span class="token comment">#确定条件</span>
+<span class="token variable">$weather</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'good'</span><span class="token punctuation">;</span>
+
+<span class="token comment">#确定分支代码块</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$weather</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'good'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'出去走走'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">#结果：出去走走</span>
+
+<span class="token comment">#执行时：如果$weather == 'good'，执行代码块；否则跳过</span>
+</code></pre></div><p>2、明天天气好，我就出去走走；否则我就在家睡觉</p> <div class="language-PHP extra-class"><pre class="language-php"><code><span class="token comment">#确定条件</span>
+<span class="token variable">$weather</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'bad'</span><span class="token punctuation">;</span>
+
+<span class="token comment">#确定分支代码块</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$weather</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'good'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'出去走走'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'在家睡觉'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">#结果：在家睡觉</span>
+
+<span class="token comment">#执行时：如果$weather == 'good'，执行代码块'出去走走'；其他所有条件都执行'在家睡觉'</span>
+</code></pre></div><p>3、明天天气出太阳，出去走走；天气刮风，去看电影；天气阴天，在家看书；否则睡觉</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#确定条件</span>
+<span class="token variable">$weather</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'rain'</span><span class="token punctuation">;</span>
+
+<span class="token comment">#确定分支代码块</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$weather</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'sun'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'出去走走'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">elseif</span><span class="token punctuation">(</span><span class="token variable">$weather</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'wind'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'去看电影'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$weather</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'cloud'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>	<span class="token comment">#PHP中elseif和else if效果一样</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'在家看书'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'睡觉'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">#结果：睡觉</span>
+
+<span class="token comment">/*
+ 执行步骤
+ 1、判定$weather == sun是否匹配：不匹配
+ 2、判定$weather == wind是否匹配：不匹配
+ 3、判定$weather == cloud是否匹配：不匹配
+ 4、有else，前面都不匹配，自然落到else中：睡觉
+*/</span>
+</code></pre></div><p>4、明天天气好：出太阳，出去走走；其他，去看电影；天气不好：阴天，看电视；其他，睡觉</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#确定条件：两组条件（大条件和小条件）</span>
+<span class="token variable">$weather1</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'good'</span><span class="token punctuation">;</span>
+<span class="token variable">$weather2</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'sun'</span><span class="token punctuation">;</span>
+
+<span class="token comment">#确定分支代码块：大条件</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$weather1</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'good'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#天气好：确定小条件</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$weather2</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'sun'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'出去走走'</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'去看电影'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token comment">#天气不好：确定小条件</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$weather2</span> <span class="token operator">==</span> <span class="token string single-quoted-string">'cloud'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'看电视'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'睡觉'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>小结</p></blockquote> <p>1、IF分支是一种可以有多个条件，但是最多只会执行一个代码块的分支</p> <p>2、IF在实际开发中根据条件的细分，可以有多种结构</p> <ul><li>简单IF分支：只有一个if条件和满足条件的代码块</li> <li>基本IF分支：只有一个if条件和满足条件的代码块，同时还有else不满足条件的代码块</li> <li>复杂IF分支：有if条件和满足的代码块，也有不满足前面条件，但是可以还可以满足其他条件的代码块，而且理论不限</li></ul> <p>3、IF分支可以解决所有根据条件所有可能的情形</p> <p>4、IF中可以嵌入IF分支，建议不要超过3层，太多层会让代码的可读性变差</p> <h3 id="_2-2、switch分支"><a href="#_2-2、switch分支" class="header-anchor">#</a> 2.2、Switch分支</h3> <blockquote><p>目标：掌握switch分支的结构语法，以及能够运用Switch结构实现分支结构解决问题</p></blockquote> <blockquote><p>概念</p></blockquote> <p><strong>Switch分支</strong>：一种接收颗粒条件的分支结构</p> <ul><li>Switch分支：条件是具体值，而不是范围条件</li> <li>Switch代码块是写在一起的，使用case分开，而不是{}</li> <li>Switch代码块允许执行多个（如果有必要）</li> <li>Switch结构</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">switch</span><span class="token punctuation">(</span>条件变量<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">case</span> 值<span class="token punctuation">:</span>
+		满足条件<span class="token number">1</span>要执行的代码块
+		代码执行控制：<span class="token keyword">break</span>
+	<span class="token operator">...</span>
+	<span class="token keyword">default</span> <span class="token punctuation">:</span>
+		不满足所有条件执行的代码块
+        代码执行控制：<span class="token keyword">break</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>步骤</p></blockquote> <p>1、确定目标条件：条件必须是颗粒度的，通常是一个变量（没有比较符号）</p> <p>2、确定可能出现的结果：一个条件对应一个case指令</p> <p>3、确定每个case指令下要执行的代码</p> <p>4、确定每个case指令是否需要结束</p> <ul><li>结束使用break</li> <li>不结束，代码会继续执行下一个case的代码块（代码块共享）</li></ul> <p>5、确定是否需要不满足条件的代码块：default</p> <ul><li>没有：结束</li> <li>有：确定default的代码块</li></ul> <blockquote><p>示例</p></blockquote> <p>1、明天天气出太阳，出去走走；天气刮风，去看电影；天气阴天，在家看书；否则睡觉</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#假设外部接收条件：条件变量为$weather，值为sun、wind、cloud和其他</span>
+<span class="token keyword">switch</span><span class="token punctuation">(</span><span class="token variable">$weather</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">#匹配第一个值：直接取$weather的值即可</span>
+    <span class="token keyword">case</span> <span class="token string single-quoted-string">'sun'</span><span class="token punctuation">:</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'出去走走'</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>			<span class="token comment">#结束：表示switch完结</span>
+    <span class="token keyword">case</span> <span class="token string single-quoted-string">'wind'</span><span class="token punctuation">:</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'去看电影'</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string single-quoted-string">'cloud'</span><span class="token punctuation">:</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'在家看书'</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>			<span class="token comment">#其他值</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'睡觉'</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>			<span class="token comment">#最后一个可以没有break</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*
+ 执行逻辑
+ 1、switch根据条件进入
+ 2、匹配$weather的值：找到合适的case
+  2.1：找到：执行
+  	2.1.1：有break：结束
+  	2.1.2：没有break：继续执行后面的case指令
+  2.2：没有找到，进入default
+*/</span>
+</code></pre></div><p>2、一周7天，1-5天上班，6和7休息（共享代码块）</p> <div class="language-PHP extra-class"><pre class="language-php"><code><span class="token comment">#确定条件：条件是1-7，每次都是一个具体的值（颗粒度）</span>
+<span class="token variable">$day</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token comment">#判定条件</span>
+<span class="token keyword">switch</span><span class="token punctuation">(</span><span class="token variable">$day</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#确定条件及其要执行的代码块</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token punctuation">:</span>		<span class="token comment">#$day的值为1，等价于 $day == 1</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'上班'</span><span class="token punctuation">;</span>
+        <span class="token comment">#确定是否要结束 </span>
+        
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token punctuation">:</span>		<span class="token comment">#发现2-5其实是同一件事情，所以可以省去重复执行的代码块</span>
+    <span class="token keyword">case</span> <span class="token number">3</span><span class="token punctuation">:</span>
+    <span class="token keyword">case</span> <span class="token number">4</span><span class="token punctuation">:</span>
+    <span class="token keyword">case</span> <span class="token number">5</span><span class="token punctuation">:</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'上班'</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">6</span><span class="token punctuation">:</span>
+    <span class="token keyword">case</span> <span class="token number">7</span><span class="token punctuation">:</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'休息'</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token comment">#确定是否需要不满足条件结果</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">echo</span> <span class="token string single-quoted-string">'没有这样的日子'</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*
+ 执行逻辑
+ 1、switch根据条件进入
+ 2、匹配是否有合适的case，没有进入default，有进入：2进入case 2
+ 3、进入case 2后开始执行代码块：没有
+ 4、看看case 2后没有发现结束语句：break，继续向下执行，进入case 3
+ 5、同理直到进入case 5：执行代码块，发现break，结束switch
+*/</span>
+</code></pre></div><blockquote><p>小结</p></blockquote> <p>1、switch是一种用来实现颗粒条件的分支结构</p> <ul><li>只适合固定值：case 具体值（内部使用 == 比较）</li> <li>不适合进行大小比较：不能case 条件 &gt; 10之类</li></ul> <p>2、switch的结构如下</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">switch</span><span class="token punctuation">(</span>条件变量<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">case</span> 值<span class="token number">1</span>：
+        代码块<span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> 值<span class="token number">2</span><span class="token punctuation">:</span>
+        代码块<span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        代码块<span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>3、break如果不写，那么可以实现多个case共享一个代码块</p> <p>4、default可以没有</p> <p>5、凡是switch能做的分支，if都能做；但是if能做的switch不一定能做</p> <h2 id="_3、循环结构"><a href="#_3、循环结构" class="header-anchor">#</a> 3、循环结构</h2> <blockquote><p>目标：掌握循环的结构语法，掌握循环的实际运用</p></blockquote> <blockquote><p>概念</p></blockquote> <p><strong>循环结构</strong>：指通过某种条件的限定，然后某个代码块进行可控的重复的执行</p> <ul><li>循环结构一般包含以下几个部分
+<ul><li>循环条件：判定循环是否执行</li> <li>循环变量变化：让条件持续改变</li> <li>循环体：要重复执行的代码块</li> <li>循环控制：内部对循环的控制</li></ul></li> <li>PHP中循环结构有以下几个
+<ul><li>while循环：不确定条件的重复执行</li> <li>for循环：一般指定次数的重复执行</li> <li>foreach循环：专门遍历数组</li> <li>do-while循环：了解</li></ul></li> <li>循环控制：内部控制循环的执行</li></ul> <blockquote><p>步骤</p></blockquote> <p>1、根据循环条件确定要重复的内容，选择合适的循环结构</p> <p>2、确定循环条件的边界</p> <p>3、确定循环条件的变更方式</p> <p>4、确定循环体（要重复执行的代码块）</p> <p>5、确定循环内部控制（不一定要）</p> <blockquote><p>小结</p></blockquote> <p>1、循环结构是一种让代码在可控范围内执行N次的流程结构（重复执行）</p> <p>2、循环结构包含多种</p> <ul><li>while循环</li> <li>for循环</li> <li>foreach循环</li> <li>do-while循环</li></ul> <p>3、循环也可以在内部进行循环控制</p> <h3 id="_3-1、while循环"><a href="#_3-1、while循环" class="header-anchor">#</a> 3.1、while循环</h3> <blockquote><p>目标：掌握while循环的基本语法，熟练运用while循环实现内容重复执行</p></blockquote> <p>提问：想输出1-10可不可以不是10次echo呢？</p> <p>回答：可以，1到10是有规矩，找一个东西从1变到10就好</p> <blockquote><p>概念</p></blockquote> <p><strong>while循环</strong>：在指定边界条件下，持续执行代码的一种循环</p> <ul><li>while循环需要边界条件（也可以没有）</li> <li>while条件需要在内部控制循环变量</li> <li>while循环多用来实现一些条件不大明确的循环</li> <li>语法结构</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">while</span><span class="token punctuation">(</span>条件表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    循环体<span class="token punctuation">;</span>
+    循环条件变更<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>步骤</p></blockquote> <p>1、通常会在循环开始前定义一个循环变量的初始值</p> <p>2、确定循环条件的边界条件</p> <p>3、确认循环体（循环要干嘛）</p> <p>4、变更循环条件</p> <blockquote><p>示例</p></blockquote> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#输出1-10</span>
+
+<span class="token comment">#1、确定循环变量初始值：可以是1，也可以是10</span>
+<span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">#2、确定循环边界条件：10</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#3、确定循环体：输出1-10</span>
+    <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token punctuation">;</span>				<span class="token comment">#$i代表1</span>
+    
+    <span class="token comment">#4、变更循环条件</span>
+    <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>流程图解析</p></blockquote> <p>以上图输出1-10的整数为例</p> <p><img src="/img/php/%E5%BE%AA%E7%8E%AF%E6%89%A7%E8%A1%8C.png" alt="循环执行"></p> <blockquote><p>小结</p></blockquote> <p>1、while循环是一种利用外部循环条件实现代码重复执行的循环</p> <p>2、while循环基本逻辑</p> <ul><li>定义循环条件初始值：1次执行</li> <li>在while(条件表达式)中确定循环的边界条件：N + 1次执行</li> <li>在循环内部实现循环体：N次执行</li> <li>在循环内部实现循环变量的变更：N次执行</li></ul> <h3 id="_3-2、for循环"><a href="#_3-2、for循环" class="header-anchor">#</a> 3.2、for循环</h3> <blockquote><p>目标：掌握for循环的语法结构，熟练使用for循环实现代码重复执行</p></blockquote> <blockquote><p>概念</p></blockquote> <p><strong>for循环</strong>：一种将循环初始条件、循环边界条件和循环条件变更都可以放到循环结构里（不是循环体）的循环</p> <ul><li>for循环需要循环初始化条件，但可以在循环结构里</li> <li>for循环需要边界条件，也可以放在循环结构里</li> <li>for循环进行循环条件变更，也可以放到结构里</li> <li>for循环一般用来实现一些固定起始、边界和步长（条件变化的规律）的循环，多与数字有关</li> <li>for语法结构</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">for</span><span class="token punctuation">(</span>初始化条件表达式<span class="token punctuation">;</span>边界判定表达式<span class="token punctuation">;</span>条件变更表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    循环体
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>步骤</p></blockquote> <p>1、确定循环初始化条件</p> <p>2、确定边界条件</p> <p>3、确定变化规则（步长）</p> <p>4、确定循环体</p> <blockquote><p>示例</p></blockquote> <p>输出1-100之间的所有奇数</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#确定初始条件：1：$i = 1;</span>
+<span class="token comment">#确定边界条件：100：$i &lt;= 100;</span>
+<span class="token comment">#确定条件变化规则：1-100的整数：$i++</span>
+<span class="token comment">#确定循环体：输出变化中的$i：奇数：$i % 2 == 1</span>
+
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#循环体：找到奇数</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">#说明是奇数</span>
+        <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>循环嵌套：打印九九乘法表</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#打印九九乘法表：一个循环要么打印一行1,2,3,4,5，要么打印一列（&lt;br/&gt;）</span>
+<span class="token comment">#而九九乘法表是一个表格，有行有列：所以单个循环肯定无法完成，需要多个循环共同完成</span>
+
+<span class="token comment">#分析</span>
+<span class="token comment">#1、确定一个循环：能够打印9行</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#9行其实就是一个换行符代表换一行</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#2、确定一个循环：能够输出9列</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token variable">$j</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#3、以上两个是独立的循环，彼此没有交集：我们需要一行里就有9列，而不是只有一列：将能够输出9列的循环移入到能输出行的循环中</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#将打印9列的循环移入到能打印行的循环中：实现9行9列输出</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token variable">$j</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">#9行其实就是一个换行符代表换一行</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#4、确定每一个单元的输出：九九乘法表并非一直输出，输出逻辑是：列数不大于行数，从第一列开始输出，第1个数为列号，第二个乘数为行号</span>
+<span class="token comment">/*
+ 1 * 1 = 1
+ 1 * 2 = 2    2 * 2 = 4	#第一个数1,2为列数，第二个数2位行数
+*/</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#将打印9列的循环移入到能打印行的循环中：实现9行9列输出</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">#输出：确保列数不能大于行数</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token variable">$i</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         	<span class="token comment">#有效输出位置：列号在前，行号在后</span>
+            <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;<span class="token interpolation"><span class="token variable">$j</span></span> * <span class="token interpolation"><span class="token variable">$i</span></span> = &quot;</span> <span class="token operator">.</span> <span class="token variable">$j</span> <span class="token operator">*</span> <span class="token variable">$i</span> <span class="token operator">.</span> <span class="token string single-quoted-string">' '</span><span class="token punctuation">;</span>	<span class="token comment">#输出带一个空格</span>
+            <span class="token comment">#&quot;$j * $i = &quot;是一个字符串只会解析变量，$j * $i是一个乘法表达式，会得出结果</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">#9行其实就是一个换行符代表换一行</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>流程图解析</p></blockquote> <p>以上图输出1-100之间的奇数为例</p> <p><img src="/img/php/%E5%BE%AA%E7%8E%AF%E5%A5%87%E6%95%B0.png" alt="循环1-100奇数"></p> <blockquote><p>小结</p></blockquote> <p>1、for循环是可以所有循环参与条件都在for循环结构内部的循环</p> <p>2、for循环结构如下</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">for</span><span class="token punctuation">(</span>表达式<span class="token number">1</span><span class="token punctuation">;</span>表达式<span class="token number">2</span><span class="token punctuation">;</span>表达式<span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   循环体   
+<span class="token punctuation">}</span>
+</code></pre></div><p>3、for循环执行流程</p> <ul><li>表达式1：用来初始化条件（只执行一次）
+<ul><li>如果初始化条件在外部，该位置可以空出</li> <li>如果有多个条件需要初始化，该位置可以使用逗号分隔</li></ul></li> <li>表达式2：用来验证条件（起始到边界总次数+1次【最后一次失败循环退出】）
+<ul><li>验证通过：进入循环体</li> <li>验证失败：结束循环</li></ul></li> <li>循环体：执行重复内容（起始到边界总次数）</li> <li>表达式3：变更循环条件（起始到边界总次数）</li></ul> <p>4、for循环实际通常用来做一些明确次数的循环</p> <h3 id="_3-3、foreach循环"><a href="#_3-3、foreach循环" class="header-anchor">#</a> 3.3、foreach循环</h3> <blockquote><p>目标：掌握foreach的语法结构，了解foreach原理，灵活使用foreach进行数组遍历</p></blockquote> <blockquote><p>概念</p></blockquote> <p>foreach循环：PHP中专门进行数组遍历的循环</p> <ul><li>foreach循环专门遍历数组</li> <li>foreach循环可以解析数组的下标和值</li> <li>foreach语法</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">foreach</span><span class="token punctuation">(</span>数组变量 <span class="token keyword">as</span> <span class="token punctuation">[</span>下标变量 <span class="token operator">=&gt;</span><span class="token punctuation">]</span> 值变量<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    通过下标变量读取数组中每个元素的下标（可以没有）
+    通过值变量读取数组中每个元素的值
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>步骤</p></blockquote> <p>1、确定要遍历的数组</p> <p>2、确定是否需要用到下标</p> <p>3、确定下标变量和值变量（名字自取：$k|$key，$v|$value）</p> <p>4、确定循环体</p> <blockquote><p>示例</p></blockquote> <p>输出个人的全部信息</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#定义数组</span>
+<span class="token variable">$info</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'name'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'鸣人'</span><span class="token punctuation">,</span><span class="token string single-quoted-string">'skill'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'螺旋丸'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">#1、确定要遍历的数组$info</span>
+<span class="token comment">#2、确定是否需要下标：需要</span>
+<span class="token comment">#3、确定相关变量：下标使用$key保存，值使用$value保存</span>
+<span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$info</span> <span class="token keyword">as</span> <span class="token variable">$key</span> <span class="token operator">=&gt;</span> <span class="token variable">$value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#4、确定循环体：输出信息</span>
+    <span class="token keyword">echo</span> <span class="token variable">$key</span> <span class="token operator">.</span> <span class="token string single-quoted-string">' : '</span> <span class="token operator">.</span> <span class="token variable">$value</span> <span class="token operator">.</span> <span class="token string single-quoted-string">'&lt;br/&gt;'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>流程图解析</p></blockquote> <p>以上述案例为例：数组有一个元素指针，默认指向第一个元素</p> <p><img src="/img/php/%E5%BE%AA%E7%8E%AF%E6%95%B0%E7%BB%84.png" alt="循环数组"></p> <blockquote><p>小结</p></blockquote> <p>1、foreach是专门用来进行数组遍历的</p> <p>2、foreach是根据数组指针所在的位置挨个取出元素的</p> <ul><li>重置指针：执行一次</li> <li>判定指针有效性
+<ul><li>指针有效：取出数组元素
+<ul><li>下标赋值给下标变量（如果提供了下标变量）</li> <li>值赋值给值变量</li> <li>指针下移</li></ul></li> <li>指针无效：循环结束</li></ul></li> <li>进入循环体</li></ul> <p>3、foreach可以不获取数组元素的下标</p> <p>4、foreach极少对一维数组进行遍历，通常是二维数组（多维）</p> <h3 id="_3-4、do-while循环"><a href="#_3-4、do-while循环" class="header-anchor">#</a> 3.4、do-while循环</h3> <blockquote><p>目标：了解do-while的基本语法以及执行原理，了解do-while与while的区别</p></blockquote> <blockquote><p>概念</p></blockquote> <p>do-while循环：是一种先执行循环体（do）然后再考虑条件的循环</p> <ul><li>do-while循环需要边界条件</li> <li>do-while循环在内部变更循环条件</li> <li>do-while用来处理不明确条件的循环</li> <li>do-while语法</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">do</span><span class="token punctuation">{</span>
+    循环体
+    循环条件变更
+<span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>循环条件判定<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>步骤</p></blockquote> <p>1、通常会在循环开始前定义一个循环变量的初始值</p> <p>2、确认循环体（循环要干嘛）</p> <p>3、变更循环条件</p> <p>4、确定循环条件的边界条件</p> <blockquote><p>示例</p></blockquote> <p>输出1-10</p> <div class="language-PHP extra-class"><pre class="language-php"><code><span class="token comment">#定义条件初始变量</span>
+<span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">#循环开始</span>
+<span class="token keyword">do</span><span class="token punctuation">{</span>
+    <span class="token comment">#输出</span>
+    <span class="token keyword">echo</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+    <span class="token comment">#循环条件变更</span>
+    <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>		<span class="token comment">#注意：需要分号结尾</span>
+</code></pre></div><blockquote><p>流程图解析</p></blockquote> <p><img src="/img/php/%E5%BE%AA%E7%8E%AF%E6%9D%A1%E4%BB%B6.png" alt="循环流程图"></p> <blockquote><p>小结</p></blockquote> <p>1、do-while也是一种利用外部循环条件实现的内部代码重复执行的循环</p> <p>2、do-while循环的语法</p> <div class="language-php extra-class"><pre class="language-php"><code>循环条件初始化
+<span class="token keyword">do</span><span class="token punctuation">{</span>
+	循环体
+    循环条件变更
+<span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>循环条件判定<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>3、do-while与while循环的区别</p> <ul><li>while是先判定条件后执行，do-while是先执行后判定条件</li> <li>do-while一定会保证循环体至少循环一次，而while未必会执行循环体</li></ul> <p>4、在PHP中do-while基本不使用（了解一下这个原理）</p> <h3 id="_3-5、循环控制"><a href="#_3-5、循环控制" class="header-anchor">#</a> 3.5、循环控制</h3> <blockquote><p>目标：掌握循环控制的基本原理和实际需求，利用循环控制实现循环内部控制</p></blockquote> <p>提问：如果在循环执行过程中出现了某些异常或者某些不符合条件的，能怎么办？</p> <p>回答：循环控制</p> <blockquote><p>概念</p></blockquote> <p>循环控制：即循环体内通过代码对控制循环如何执行</p> <ul><li>循环体内控制代码的执行方向</li> <li>循环控制是为了增加程序的健壮性，让开发者可以在循环内部把握循环的正确执行</li> <li>根据需求（条件）进行控制
+<ul><li>终止单次循环体执行：continue [层级]，层级默认1（直接进行下一次循环）</li> <li>终止循环（循环结束）：break [层级]，层级默认1</li></ul></li></ul> <blockquote><p>步骤</p></blockquote> <p>1、循环开始</p> <p>2、循环体内是否需要判定条件</p> <ul><li>条件满足：选择控制
+<ul><li>确定控制层级（单层循环不需要）</li></ul></li> <li>条件不满足：不需要控制</li></ul> <blockquote><p>示例</p></blockquote> <p>求出1-100之间所有非3的倍数的和</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#定义初始变量（使用while循环）</span>
+<span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token variable">$sum</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>	<span class="token comment">#记录和</span>
+
+<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#确定当前变量$i是否是3的倍数</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">#是3的倍数：这个值不记录：但是后续的代码不用再执行（注意条件要变化）</span>
+        <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token keyword">continue</span><span class="token punctuation">;</span>		<span class="token comment">#continue之后的循环体不执行</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">#求和：同时变更变量</span>
+    <span class="token variable">$sum</span> <span class="token operator">+=</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">;</span>		<span class="token comment">#等价于：$sum = $sum + $i++（后置自操作，先使用原值，后自操作）</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>求出1-100之间所有的数的和</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#定义初始变量</span>
+<span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token variable">$sum</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token comment">#开始循环：条件永远为真</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token constant boolean">TRUE</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#外部没有进行条件控制：说明循环是死循环，我们要在内部保证循环不会一直执行</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">#已经不满足需求：循环没有必要继续</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">#如果前面条件不满足：说明当前是满足循环要求的，继续执行</span>
+    <span class="token variable">$sum</span> <span class="token operator">+=</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>九九乘法表优化</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">#原九九乘法表</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#将打印9列的循环移入到能打印行的循环中：实现9行9列输出</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">#输出：确保列数不能大于行数</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token variable">$i</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         	<span class="token comment">#有效输出位置：列号在前，行号在后</span>
+            <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;<span class="token interpolation"><span class="token variable">$j</span></span> * <span class="token interpolation"><span class="token variable">$i</span></span> = &quot;</span> <span class="token operator">.</span> <span class="token variable">$j</span> <span class="token operator">*</span> <span class="token variable">$i</span> <span class="token operator">.</span> <span class="token string single-quoted-string">' '</span><span class="token punctuation">;</span>	<span class="token comment">#输出带一个空格</span>
+            <span class="token comment">#&quot;$j * $i = &quot;是一个字符串只会解析变量，$j * $i是一个乘法表达式，会得出结果</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">#9行其实就是一个换行符代表换一行</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">#问题：当内存循环$j &gt; $i之后，虽然不会输出，但是内层for循环会一直执行直到$j &gt; 9，这部分是无效执行：所以应当优化，即内存循环$j &gt; $i之后已经没有执行的意义了（结束循环）</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$i</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">#将打印9列的循环移入到能打印行的循环中：实现9行9列输出</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">;</span><span class="token variable">$j</span><span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">#输出：确保列数不能大于行数</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">$j</span> <span class="token operator">&lt;=</span> <span class="token variable">$i</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+         	<span class="token comment">#有效输出位置：列号在前，行号在后</span>
+            <span class="token keyword">echo</span> <span class="token string double-quoted-string">&quot;<span class="token interpolation"><span class="token variable">$j</span></span> * <span class="token interpolation"><span class="token variable">$i</span></span> = &quot;</span> <span class="token operator">.</span> <span class="token variable">$j</span> <span class="token operator">*</span> <span class="token variable">$i</span> <span class="token operator">.</span> <span class="token string single-quoted-string">' '</span><span class="token punctuation">;</span>	<span class="token comment">#输出带一个空格</span>
+            <span class="token comment">#&quot;$j * $i = &quot;是一个字符串只会解析变量，$j * $i是一个乘法表达式，会得出结果</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">#循环控制：进入else说明$j &gt; $i，已经失去意义了</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>	<span class="token comment">#当前break是控制所属循环（j循环），所以终止也是当前j循环，进入到i循环执行&lt;br&gt;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">#9行其实就是一个换行符代表换一行</span>
+    <span class="token keyword">echo</span> <span class="token string single-quoted-string">'&lt;br/&gt;'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>流程图示例</p></blockquote> <p>continue流程控制</p> <p><img src="/img/php/continue%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.png" alt="continue流程控制"></p> <p>break流程控制</p> <p><img src="/img/php/break%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6.png" alt="break流程控制"></p> <blockquote><p>小结</p></blockquote> <p>1、循环控制是在循环内部提供了一种可以控制循环的机制</p> <ul><li>内部控制，给开发者提供灵活性</li> <li>内部控制，给开发者提供优化空间（省去不必要的循环）</li></ul> <p>2、循环控制分为两种</p> <ul><li>终止单次循环：continue</li> <li>终止整个循环：break</li></ul> <p>3、循环控制有层级，如果在多层循环中需要控制到不同的层级，可以使用层级数</p> <ul><li>continue [N]：回到N层循环继续下一次循环开始</li> <li>break [N]：跳出到N+1层循环，如果没有N+1层循环，循环结束</li> <li>N如果为1，那么可以省去</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.dfc1759d.js" defer></script><script src="/assets/js/2.f9f55aeb.js" defer></script><script src="/assets/js/20.5cf7e4b8.js" defer></script>
+  </body>
+</html>
